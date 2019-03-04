@@ -52,7 +52,11 @@ Installation and start up :
 5) java <nama file>  
 
 Git hub (git bash ke git hub):
+$ git clone 
 $ git add*
 $ git commit -m "first commit"
 $ git push
+
+
+tesgt csnjmjdfsj
 
