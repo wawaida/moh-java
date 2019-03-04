@@ -67,4 +67,10 @@ $int age = 10;
 public - method dr page lain boleh guna / gunasama
 private - blh access dr function dlm page tu shj
 protected - berada dalam file tu shj
+void - method yg tak return apa2 
+final - tak boleh override, once dh da dalam parent.. dh tak boleh di file lain
+static - share and own by class
+
+method overloading - method nama sama, tp parameter tak sama 
+method overriding - replace method
 

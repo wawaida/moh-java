@@ -1,13 +1,32 @@
 package chap4;
+/*
+"this" utk set/get a property or call/run method
+i.e this.jumlah = 100;
+ */
 
 public class LoanCalculator extends Calculator{
-    
+
+    // property
     int jumlah; // variable
+    final String tajuk = "LOAN CALCULATOR"; // "final" => value tak boleh tukar
+    
+    // ini override cetak() dalam parent
+    @Override
+    public void cetak(){
+        //this.tajuk = "abc"; //initial value dh di assign kpd yg utama, dh x blh tukar
+        System.out.println("cetak LoanCalculator");
+    }
+    
+    /*public final void info(){
+    }*/
+    // ini tak boleh sbb parent info() dah final
+        
     
     // ctrl + space = show auto suggestion
     // 
     public static void main(String[] args) {
         LoanCalculator cal = new LoanCalculator();
+        cal.cetak(); 
         LoanCalculator cal2 = new LoanCalculator(2); // shift + ctrl + arrow bwh
     }
     
@@ -17,6 +36,7 @@ public class LoanCalculator extends Calculator{
     // guna biasanyew initialize variable
     // mesti public
     public LoanCalculator(){
+        super(); // run parent contractor
         System.out.println("i'm in constractor");
     }
     
