@@ -57,6 +57,14 @@ $ git add*
 $ git commit -m "first commit"
 $ git push
 
+OOP (cth) :
+class - acuan bahulu / blueprint
+object - kuih (macam2 rasa, warna berbeza) / result of blueprint
 
-tesgt csnjmjdfsj
+Style oop java :
+$int age = 10;
+
+public - method dr page lain boleh guna / gunasama
+private - blh access dr function dlm page tu shj
+protected - berada dalam file tu shj
 
