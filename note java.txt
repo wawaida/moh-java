@@ -1,0 +1,58 @@
+
+4/3/2019 (isnin)
+
+java - web - system
+
+tools:
+jdk1.8.0_144 - development (java dev kid)
+jre1.8.0_144 - running (java runtime envir)
+NetBeans IDE 8.2 - editor coding
+mysql - database
+sqlyog - editor db
+xampp - running server
+git bash - configure text (comment to generate)
+git - simpan kod online
+
+jvm (java visual machine) :
+- engine tuk run dlm JRE, 
+- coding duk dalam jvm 
+
+history:
+java is verbose (lengkap dan panjang huraian, comlicated)
+
+java for :
+- prog running in terminal
+- can create desktop
+- java applet
+- java web, servlet and jsp, jsf
+- mobile (android)
+- IoT (Internet of Things) 
+
+Famous tools create mobile app :
+- ionic ()
+- React Navice (fb)
+- Flutter (google)
+ : html, css, javascript
+
+Git Bash (comment to run file):
+- $ clear => clear terminal (padam)
+- $ javac => java compiler
+- $ cd /c/mohjava => masuk dalam folder c ->mohjava
+- $ ls => senaraikan file yg ada dlm folder current
+- $ java -version => tgk java running tak dalam pc
+- $ javac HelloWorld.java => compile file java
+  : akn ada file .class yg dicreate
+- $ java HelloWorld - run file (without file ext)
+
+Installation and start up :
+1) Download JDK dari oracle website
+2) Install ke c:\program files\java\jdk
+3) Set environment variable "path" point c:\program files\java\jdk..\bin
+4) javac <nama file>.java
+5) java <nama file>  
+
+Git hub (git bash ke git hub):
+$ git add*
+$ git commit -m "first commit"
+$ git push
+
