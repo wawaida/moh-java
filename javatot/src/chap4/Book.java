@@ -14,9 +14,8 @@ public class Book {
         System.out.println("Jumlah Buku = " + Book.bil);
     }
     
-//    public void info(){
-//        
-//    }
+    public void info(){
+    }
     
     Book(){
         Book.bil = Book.bil + 1;
@@ -27,7 +26,8 @@ public class Book {
         Book b1 = new Book();
         Book b2 = new Book();
         Book.cetak();
-        //info(); // tak boleh sbb dia bukan statik
+        //info(); // tak boleh sbb dia bukan statik       
+        
     }
     
 }
