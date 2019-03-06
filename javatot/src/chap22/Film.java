@@ -22,7 +22,9 @@ public class Film {
             String sql ="SELECT * FROM film";
             rs = stmt.executeQuery(sql);
             while(rs.next()){
-                System.out.print(rs.getString("title") + "\t\t");
+                int id = rs.getInt("film_id");
+                System.out.print(id + "\t");
+                System.out.print(rs.getString("title") + "\t");
                 System.out.println(rs.getString("description"));
             }
         }catch(Exception e){

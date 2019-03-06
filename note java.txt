@@ -1,6 +1,8 @@
 
 4/3/2019 (isnin)
+----------------
 
+intro:
 java - web - system
 
 tools:
@@ -64,13 +66,87 @@ object - kuih (macam2 rasa, warna berbeza) / result of blueprint
 Style oop java :
 $int age = 10;
 
+primitive = 8 (start huruf kecil) cth:int umur;
+non-primitive = cth:Book b1;
+
 public - method dr page lain boleh guna / gunasama
 private - blh access dr function dlm page tu shj
 protected - berada dalam file tu shj
 void - method yg tak return apa2 
-final - tak boleh override, once dh da dalam parent.. dh tak boleh di file lain
-static - share and own by class
-
+static - share by all obj and own by class
+main - entry point
+constractor - nama = nama class dan tak submit parameter 
 method overloading - method nama sama, tp parameter tak sama 
-method overriding - replace method
+method overriding - replace method, inheritance
+ : final - tak boleh override, once dh da dalam parent.. dh tak boleh guna di file lain
+ : final var (constant), cth:float PI = 3.14
 
+
+
+5/3/2019 (selasa)
+-----------------
+
+
+
+java vs db:
+1) JDBC (Java Data base Connectivity) driver
+  : masukkan .jar dalam netbeans, add kat libraries
+
+libraries:
+java.lang
+-String
+java.net
+java.awt
+java.swing
+...
+java.sql
+-Connection
+-Statement
+-ResultSet
+
+java category:
+JSE (core library
+
+chap 5:
+passing by value : ori tak berubah, primitive
+passing by reference : ori akan berubah, pass obj, tdk copy ori
+
+chap 6:
+package:
+- nama dia mesti unik (cth:moh.gov.my => my.gov.moh)
+
+Interface:
+- decleration shj, tiada immplimentation (bwh konsep inheritance)
+
+interface vs class
+- declaration: public interface vs :public class 
+- inherit vs extend (cth: employee implemant Payable)
+- implement: declaration method vs :declaration, implimentation
+
+Error Handling:
+try{
+}catch(Exception e){
+}finally{ // always exe samada error / tidak
+}
+
+JEE:
+- web
+- tomcat 9
+- JAVA_HOME
+- port:8080
+- webapps/example
+- cth: webapps/tutorial
+	WEB-INF:
+	- web.xml
+	- classes
+	  :-HelloServlet.class
+
+1) add project : java ee (klu tiada, keno tambah plugin: tools->plugin
+                                                     
+
+
+6/3/2019 (rabu)
+---------------
+
+
+http://localhost:9999/tutorial/servlets/HelloWorldExample
