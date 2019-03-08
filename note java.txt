@@ -148,5 +148,47 @@ JEE:
 6/3/2019 (rabu)
 ---------------
 
+tukar port if clash
+- C:\apache-tomcat-9.0.0.M26\conf -> server.xml -> Connector port="9999"
 
-http://localhost:9999/tutorial/servlets/HelloWorldExample
+kerja kita
+- copy dalam C:\apache-tomcat-9.0.0.M26\webapps\tutorial\WEB-INF\classes
+- keje kita perlu run di : cd webapps/tutorial/WEB-INF/classes/
+
+startup tomcat
+1) cd /c/apache-tomcat-9.0.0.M26/bin
+2) ./startup.bat -> akan keluar sun(kopi icon : was running)
+
+shutdown tomcat
+- ./shutdown.bat -> cmd akan running update dan auto close
+
+compile file dalam notepad
+cari file : servlet-api.jar (dr dalam folder comp) -> run command bwh
+1) javac -cp /c/apache-tomcat-9.0.0.M26/lib/servlet-api.jar HelloWorldExample.java 
+2) refresh file kat browser:mozilla/chrome
+
+servlet:
+- void init() // run diawal constractor
+- service ???
+- doGET() method 
+- doPost() method // submit form
+- destroy() method // run last
+
+in java always "parameter/variable"
+in php can be "" or ''
+
+Load driver:
+Class.forName("com.mysql.jdbc.Driver");
+
+JSP :
+el : ${ },math 
+scriplet : <% %>
+expression : <%= %>
+
+mvc:
+model:pojo (plane old java obj) - controller:servlet - view:jsp
+
+
+
+
+
