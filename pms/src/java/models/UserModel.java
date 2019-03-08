@@ -12,6 +12,15 @@ public class UserModel extends Model{
     private String name;
     private String pwd;
     private String role;
+    private String gender;
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
     public String getName() {
         return name;
@@ -67,6 +76,7 @@ public class UserModel extends Model{
                 this.staffId = rs.getString("staff_id");
                 this.name = rs.getString("name");
                 this.role = rs.getString("role");
+                this.gender = rs.getString("gender");
                 return true;
             } else {
                 //user tak wujud
@@ -76,6 +86,19 @@ public class UserModel extends Model{
             ex.printStackTrace();
         }
         return false;        
+    }
+    
+    public boolean insert(){
+        String sql = "INSERT INTO users(name, staff_id, pwd, role, gender) " +
+                     "VALUES('" + this.name + "','" + this.staffId + "','" + this.pwd + "','" + this.role + "','" + this.gender + "')";
+        try{
+            Statement stmt = this.getStmt();
+            stmt.execute(sql); // insert,update,delete                   
+        } catch(Exception e) {
+            e.printStackTrace();
+            return false;
+        }  
+        return true;
     }
     
     public static void main(String[] args) {

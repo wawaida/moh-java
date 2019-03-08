@@ -18,6 +18,6 @@
         <title>PMS</title>
     </head>
     <body>
-        <h3><%= user.getName() %></h3>( <a href="/pms/login?logout">Logout</a> )<br>
+        <h3><%= user.getName() %></h3>( <a href="/pms/login?logout">Logout</a> )<br><br>
             
             
