@@ -11,6 +11,7 @@
     <body>
         <%
             String msg = request.getParameter("msg");
+            
             if(msg != null){
                 out.print("<div class='alert alert-danger'>User not recognized !!!</div>");
             }
@@ -21,6 +22,7 @@
                 <div><input type="text" name="staff_id" class="form-control"></div>
                 <div>Password</div>
                 <div><input type="password" name="pwd" class="form-control"></div>
+                <br>
                 <div><input type="submit" value="Signin" class="btn btn-primary"></div>              
             </form>
         </div>

@@ -6,6 +6,7 @@
 package controllers;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,11 +30,20 @@ public class Login extends HttpServlet {
             // user wujud, set session, then go project list
             HttpSession sess = req.getSession();
             sess.setAttribute("loggedin", true);
+            sess.setAttribute("user", user); // save obj into session
             res.sendRedirect("/pms/project");
         }else{
             //user tak wujud, go back to login            
             res.sendRedirect("/pms/pub/login.jsp?msg");
         }
+        
+    }
+    
+    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        
+        HttpSession session = req.getSession();
+        session.invalidate(); // destroy session
+        res.sendRedirect("/pms/pub/login.jsp");
         
     }
 
